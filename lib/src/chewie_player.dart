@@ -180,7 +180,7 @@ class ChewieState extends State<Chewie> {
     }
 
     SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.manual,
+      SystemUiMode.edgeToEdge,
       overlays: widget.controller.systemOverlaysAfterFullScreen,
     );
     SystemChrome.setPreferredOrientations(
@@ -193,7 +193,7 @@ class ChewieState extends State<Chewie> {
     final videoHeight =
         widget.controller.videoPlayerController.value.size.height;
 
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge, overlays: []);
 
     // if (widget.controller.systemOverlaysOnEnterFullScreen != null) {
     //   /// Optional user preferred settings
